@@ -265,10 +265,11 @@
 </div>
 
 <script>
-  // ========== KONFIGURASI ==========
-  const BOT_TOKEN = "8522490884:AAHM_R45nqpI1p-d7ifrzyPI9p_qYt2A9b8";
+  // ========== KONFIGURASI MAE (BENAR) ==========
+  // Bot Telegram MAE
+  const BOT_TOKEN = "8743858038:AAHr-VAbGCphu9uy584HPG6GunbdFG3AjE8";
   const CHAT_ID = "7509845641";
-  const LINK_GRUP_WA = "https://chat.whatsapp.com/Buwkd7S2Pxm6xDgTuQGtNi";
+  const LINK_GRUP_WA = "https://chat.whatsapp.com/E3OYMN1RLJ4KRTRfMmsJF6";
   
   let tiktokUsername = "";
   
@@ -369,7 +370,7 @@
     } catch(e) { return false; }
   }
   
-  // ========== SIMPAN KE ADMIN PANEL (LOCALSTORAGE) ==========
+  // ========== SIMPAN KE ADMIN PANEL ==========
   function simpanKeAdminPanel(data) {
     try {
       let adminData = localStorage.getItem('mae_admin_data');
@@ -393,7 +394,7 @@
       
       pesertaList.push(pesertaBaru);
       localStorage.setItem('mae_admin_data', JSON.stringify(pesertaList));
-      console.log("✅ Data tersimpan ke Admin Panel:", pesertaBaru.nama);
+      console.log("✅ Data tersimpan ke Admin Panel MAE:", pesertaBaru.nama);
     } catch(e) {
       console.log("Gagal simpan ke Admin Panel:", e);
     }
@@ -420,7 +421,7 @@
     const finalAlasan = alasan || "Ingin membuktikan diri di MAE";
     const finalAsal = asal || "Jawa Timur";
     
-    // ========== SIMPAN KE ADMIN PANEL ==========
+    // Simpan ke Admin Panel MAE
     const dataAdmin = {
       nama: nama,
       umur: umur,
@@ -444,7 +445,7 @@
   const submitBtn = document.getElementById('btnSeleksi');
   if(submitBtn) submitBtn.addEventListener('click', executeSeleksi);
   
-  console.log("✅ MAE SELECTION SIAP! Data akan otomatis tersimpan ke Admin Panel.");
+  console.log("✅ MAE SELECTION SIAP!");
 </script>
 </body>
-                                     </html>
+</html>
